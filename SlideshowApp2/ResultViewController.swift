@@ -9,12 +9,26 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    //-----------------------------------------------------
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //--表示している画像の名前を受け取る変数---------------------
+    
+    var imageName:String = ""
+    
+    //-----------------------------------------------------
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        imageView.image = UIImage(named:imageName)
     }
+    
+    //-----------------------------------------------------
+    
     @IBAction func backButton(_ sender: Any) {
     }
 

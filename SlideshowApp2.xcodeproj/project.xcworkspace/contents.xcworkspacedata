@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../SlideshowApp/img/image1.jpg">
-   </FileRef>
-   <FileRef
-      location = "group:../../SlideshowApp/img/image2.jpg">
-   </FileRef>
-   <FileRef
-      location = "group:../../SlideshowApp/img/image3.jpg">
-   </FileRef>
-   <FileRef
       location = "self:SlideshowApp2.xcodeproj">
    </FileRef>
 </Workspace>
