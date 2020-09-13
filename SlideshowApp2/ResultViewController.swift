@@ -18,6 +18,7 @@ class ResultViewController: UIViewController {
     
     var imageName:String = ""
     
+    //--テストコメント（削除可）-------------------------------
     //-----------------------------------------------------
     
     override func viewDidLoad() {

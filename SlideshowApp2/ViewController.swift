@@ -6,9 +6,11 @@
 //  Copyright © 2020 natsuki.yamamoto2. All rights reserved.
 //
 
+
 import UIKit
 
 class ViewController: UIViewController {
+    //再度コミット、プッシュ2009140815
     
     //--imageViewに画像を表示する------------------------------
     
@@ -113,8 +115,6 @@ class ViewController: UIViewController {
         }
         
     }
-    
-    
     
     //-----------------------------------------------------
     

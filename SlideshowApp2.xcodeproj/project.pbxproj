@@ -69,10 +69,10 @@
 				5F27F8682508FAE2008761E0 /* ViewController.swift */,
 				5F27F87825090F75008761E0 /* ResultViewController.swift */,
 				5F27F86A2508FAE2008761E0 /* Main.storyboard */,
-				5F27F86D2508FAE6008761E0 /* Assets.xcassets */,
 				5F27F87A2509157E008761E0 /* image1.jpg */,
 				5F27F87B2509157E008761E0 /* image2.jpg */,
 				5F27F87C2509157E008761E0 /* image3.jpg */,
+				5F27F86D2508FAE6008761E0 /* Assets.xcassets */,
 				5F27F86F2508FAE6008761E0 /* LaunchScreen.storyboard */,
 				5F27F8722508FAE6008761E0 /* Info.plist */,
 			);
