@@ -18,15 +18,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bGt-gL-gBt">
                                 <rect key="frame" x="20" y="84" width="374" height="242"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="1ND-6T-K3b"/>
                                     <constraint firstAttribute="height" constant="242" id="Zsp-dq-7Uy"/>
                                     <constraint firstAttribute="width" constant="374" id="hgu-qs-KV4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="242" id="zWQ-8S-21L"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g33-H7-7Tk" userLabel="Image Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g33-H7-7Tk" userLabel="Image Button">
                                 <rect key="frame" x="20" y="84" width="374" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="PBp-6x-bgo"/>
+                                    <constraint firstAttribute="height" constant="242" id="tbD-Zb-yJJ"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="imagebottun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="own-QM-LcL"/>
-                                    <action selector="imagebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0x-cp-RE4"/>
                                     <segue destination="p0E-8l-cQ5" kind="show" id="uXV-Ab-fzb"/>
                                 </connections>
                             </button>
@@ -69,6 +73,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="bGt-gL-gBt" id="f59-hK-ylV"/>
+                        <outlet property="playButton" destination="UUP-6J-Lc1" id="xz5-WU-nzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,10 +103,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="pY9-DD-kKJ" firstAttribute="top" secondItem="5Jw-It-Ac0" secondAttribute="bottom" constant="30" id="284-hS-epR"/>
-                            <constraint firstItem="5Jw-It-Ac0" firstAttribute="leading" secondItem="g4i-y2-SRc" secondAttribute="leading" id="7lO-Gu-uJt"/>
                             <constraint firstItem="pY9-DD-kKJ" firstAttribute="centerX" secondItem="LQV-LA-vtW" secondAttribute="centerX" id="Hqv-rl-eRB"/>
+                            <constraint firstItem="5Jw-It-Ac0" firstAttribute="trailing" secondItem="g4i-y2-SRc" secondAttribute="trailing" id="TPq-ET-qPW"/>
                             <constraint firstItem="5Jw-It-Ac0" firstAttribute="top" secondItem="g4i-y2-SRc" secondAttribute="top" constant="75" id="Xes-cy-db5"/>
-                            <constraint firstItem="5Jw-It-Ac0" firstAttribute="trailing" secondItem="g4i-y2-SRc" secondAttribute="trailing" id="sKd-01-XVT"/>
+                            <constraint firstItem="5Jw-It-Ac0" firstAttribute="leading" secondItem="g4i-y2-SRc" secondAttribute="leading" id="pLD-Qf-114"/>
                             <constraint firstItem="5Jw-It-Ac0" firstAttribute="centerX" secondItem="LQV-LA-vtW" secondAttribute="centerX" id="xrQ-pd-yWc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g4i-y2-SRc"/>

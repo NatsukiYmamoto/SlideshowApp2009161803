@@ -94,18 +94,27 @@ class ViewController: UIViewController {
     }
     
     //--再生ボタンをタップする2秒毎に自動でスライドする--------------------
+    
+    @IBOutlet weak var playButton: UIButton!
+    
     @IBAction func jidouokuri(_ sender: Any) {
         
         // 停止中は自動送り開始
         if self.timer == nil {
+            // ボタンの文字を停止にする
+            playButton.setTitle("停止", for: .normal)
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
         } else {
+            // ボタンの文字を開始にする
+            playButton.setTitle("開始", for: .normal)
             // 自動送り中は停止
             self.timer.invalidate()
             self.timer = nil
         }
         
     }
+    
+    
     
     //-----------------------------------------------------
     
@@ -115,7 +124,8 @@ class ViewController: UIViewController {
         }
     //----他の画面から segue を使って戻ってきた時に呼ばれる-------------
     
-    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+   @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    
     }
     
 }
