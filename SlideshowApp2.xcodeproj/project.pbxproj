@@ -14,9 +14,9 @@
 		5F27F86E2508FAE6008761E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F27F86D2508FAE6008761E0 /* Assets.xcassets */; };
 		5F27F8712508FAE6008761E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F27F86F2508FAE6008761E0 /* LaunchScreen.storyboard */; };
 		5F27F87925090F75008761E0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F27F87825090F75008761E0 /* ResultViewController.swift */; };
-		5F27F87D2509157E008761E0 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F27F87A2509157E008761E0 /* image1.jpg */; };
-		5F27F87E2509157E008761E0 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F27F87B2509157E008761E0 /* image2.jpg */; };
-		5F27F87F2509157E008761E0 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F27F87C2509157E008761E0 /* image3.jpg */; };
+		5F4BF9B6251024AB00E55474 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BF9B3251024AB00E55474 /* image2.jpg */; };
+		5F4BF9B7251024AB00E55474 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BF9B4251024AB00E55474 /* image1.jpg */; };
+		5F4BF9B8251024AB00E55474 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BF9B5251024AB00E55474 /* image3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		5F27F8702508FAE6008761E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F27F8722508FAE6008761E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F27F87825090F75008761E0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		5F27F87A2509157E008761E0 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = ../../SlideshowApp/img/image1.jpg; sourceTree = "<group>"; };
-		5F27F87B2509157E008761E0 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = ../../SlideshowApp/img/image2.jpg; sourceTree = "<group>"; };
-		5F27F87C2509157E008761E0 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = ../../SlideshowApp/img/image3.jpg; sourceTree = "<group>"; };
+		5F4BF9B3251024AB00E55474 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		5F4BF9B4251024AB00E55474 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		5F4BF9B5251024AB00E55474 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +64,14 @@
 		5F27F8632508FAE2008761E0 /* SlideshowApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				5F4BF9B4251024AB00E55474 /* image1.jpg */,
+				5F4BF9B3251024AB00E55474 /* image2.jpg */,
+				5F4BF9B5251024AB00E55474 /* image3.jpg */,
 				5F27F8642508FAE2008761E0 /* AppDelegate.swift */,
 				5F27F8662508FAE2008761E0 /* SceneDelegate.swift */,
 				5F27F8682508FAE2008761E0 /* ViewController.swift */,
 				5F27F87825090F75008761E0 /* ResultViewController.swift */,
 				5F27F86A2508FAE2008761E0 /* Main.storyboard */,
-				5F27F87A2509157E008761E0 /* image1.jpg */,
-				5F27F87B2509157E008761E0 /* image2.jpg */,
-				5F27F87C2509157E008761E0 /* image3.jpg */,
 				5F27F86D2508FAE6008761E0 /* Assets.xcassets */,
 				5F27F86F2508FAE6008761E0 /* LaunchScreen.storyboard */,
 				5F27F8722508FAE6008761E0 /* Info.plist */,
@@ -138,10 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F27F8712508FAE6008761E0 /* LaunchScreen.storyboard in Resources */,
-				5F27F87E2509157E008761E0 /* image2.jpg in Resources */,
-				5F27F87D2509157E008761E0 /* image1.jpg in Resources */,
-				5F27F87F2509157E008761E0 /* image3.jpg in Resources */,
+				5F4BF9B7251024AB00E55474 /* image1.jpg in Resources */,
 				5F27F86E2508FAE6008761E0 /* Assets.xcassets in Resources */,
+				5F4BF9B8251024AB00E55474 /* image3.jpg in Resources */,
+				5F4BF9B6251024AB00E55474 /* image2.jpg in Resources */,
 				5F27F86C2508FAE2008761E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

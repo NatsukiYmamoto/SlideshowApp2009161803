@@ -92,8 +92,8 @@
                                 <rect key="frame" x="0.0" y="75" width="414" height="275"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY9-DD-kKJ">
-                                <rect key="frame" x="189.5" y="381" width="35" height="30"/>
-                                <state key="normal" title="Buck"/>
+                                <rect key="frame" x="190" y="381" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backButton:" destination="p0E-8l-cQ5" eventType="touchUpInside" id="I6I-wa-mHZ"/>
                                     <segue destination="Z4t-r9-vLW" kind="unwind" unwindAction="unwind:" id="hc9-fT-5SK"/>
