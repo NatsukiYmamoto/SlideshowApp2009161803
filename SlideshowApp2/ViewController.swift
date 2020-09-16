@@ -10,7 +10,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //再度コミット、プッシュ2009140815
     
     //--imageViewに画像を表示する------------------------------
     
@@ -26,6 +25,7 @@ class ViewController: UIViewController {
     
     var image1: UIImage!
     
+    
     //--viewがLoadされたら------------------------------------
     
     override func viewDidLoad() {
@@ -37,11 +37,24 @@ class ViewController: UIViewController {
         
     }
     
-    //-----------------------------------------------------
+    //--画面遷移させる-----------------------------------------
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.imageName = imageName
+        
+        //--拡大画面に移動する前に自動送りを停止させる--------------
+        if timer != nil {
+            timer.invalidate()
+            timer = nil
+            
+            // ボタンの文字を開始にする
+            playButton.setTitle("開始", for: .normal)
+            
+            //UIButtonを有効化
+            cannotPushModoru.isEnabled = true
+            cannotPushSusumu.isEnabled = true
+        }
     }
     
     //--進むボタンタップ時のアクション-------------------------
@@ -99,19 +112,31 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playButton: UIButton!
     
+    //--自動送りの間は、進むボタンと戻るボタンはタップ不可----------
+    @IBOutlet weak var cannotPushModoru: UIButton!
+    @IBOutlet weak var cannotPushSusumu: UIButton!
+    
     @IBAction func jidouokuri(_ sender: Any) {
-        
+    
+    //--再生ボタンをタップする2秒毎に自動でスライドしているとき--------------------
         // 停止中は自動送り開始
         if self.timer == nil {
             // ボタンの文字を停止にする
             playButton.setTitle("停止", for: .normal)
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            //UIButtonを無効化
+            cannotPushModoru.isEnabled = false
+            cannotPushSusumu.isEnabled = false
+            
         } else {
             // ボタンの文字を開始にする
             playButton.setTitle("開始", for: .normal)
             // 自動送り中は停止
             self.timer.invalidate()
             self.timer = nil
+            //UIButtonを有効化
+            cannotPushModoru.isEnabled = true
+            cannotPushSusumu.isEnabled = true
         }
         
     }

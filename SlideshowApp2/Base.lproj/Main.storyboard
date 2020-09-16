@@ -72,13 +72,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cannotPushModoru" destination="0Fe-cu-Cdw" id="JE0-mr-qOA"/>
+                        <outlet property="cannotPushSusumu" destination="v7V-9G-0p1" id="bVr-pt-Fa0"/>
                         <outlet property="imageView" destination="bGt-gL-gBt" id="f59-hK-ylV"/>
                         <outlet property="playButton" destination="UUP-6J-Lc1" id="xz5-WU-nzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="146" y="135"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="2Iz-kV-y1Q">
